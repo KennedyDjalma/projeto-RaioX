@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Parâmetros</title>
+
+    <link rel="stylesheet" href="calcMas.css">
+</head>
+
+<body>
+    <h1>Parâmetros Radiológicos</h1>
+
+    <header>
+        <nav>
+            <a href="index.html"><strong>kV</strong></a> 
+            <a href="calcMas.html"><strong>mAs</strong></a>
+        </nav>
+    </header>
+
+    <div class="folhaDaPagina">
+
+        <h2>Calculadora de Miliampère-segundo (mAs)</h2>
+
+        <div class="camposDeInput"><!--CAMPOS DE INPUT-->
+            <div>
+                <p>Digite CA ou CF.</p>
+                <input type="number" id="inputCA" placeholder="Constante Aparelho / filme"> <br>
+            </div>
+
+            <div>
+                <p>Espessura do Corpo.</p>
+                <input type="number" id="inputCm" placeholder="Espessura em cm"> <br>
+            </div>
+
+            <div>
+                <p>C.M.M.</p>
+                <input type="number" id="inputCMM" placeholder="C.M.M."> <br>
+            </div>
+
+            <div>
+                <button id="calculateButton" onclick="calcularmAs()">Calcular</button>
+                <br>
+            </div>
+
+            <div>
+                <p>Resultado do mAs.</p>
+                <input type="number" id="inputmAs" placeholder="Resultado do mAs" readonly>
+            </div>
+        </div><!--CAMPOS DE INPUT-->
+
+
+        <div class="informacao"> <!-- Divisão de Informações -->
+
+            <h3>Constantes Miliamperimétrica de Maron (C.M.M)</h3>
+            <table>
+                <tr>
+
+                    <td>Estrutura ou região radiografada</td>
+                    <td>Unidade de medida da absorção</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">Corpo Ósseo</td>
+                    <td>Cintura escapular = 0,5</td>
+                </tr>
+                <tr>
+                    <td>Cintura pélvica = 0,5</td>
+                </tr>
+                <tr>
+                    <td>Crânio e coluna vertebral = 0,5</td>
+                </tr>
+                <tr>
+                    <td rowspan="4">Extremidades</td>
+                </tr>
+                <tr>
+                    <td>Quirodáctilos e pododáctilos = 0,1</td>
+                </tr>
+                <tr>
+                    <td>Mão, pé, perma e antebraço = 0,1</td>
+                </tr>
+                <tr>
+                    <td>Úmero, joelho, cotovelo, etc. = 0,1</td>
+                </tr>
+                <tr>
+                    <td>Aparelho respiratório</td>
+                    <td> Tórax = 0,1</td>
+                </tr>
+                <tr>
+                    <td>Aparelho digestivo</td>
+                    <td> Estomago, intestino e etc. = 0,3</td>
+                </tr>
+                <tr>
+                    <td>Aparelho urinário</td>
+                    <td> Abdome e rins = 0,3</td>
+                </tr>
+                <tr>
+                    <td>Partes moles</td>
+                    <td> Região muscular e cartilagem = 0,01</td>
+                </tr>
+
+            </table>
+
+            <h3>Informações:</h3>
+            <p>
+                Corpo ósseo: Exame feito Com Bucky. <br>
+                Extremidades: Exame feito Sem Bucky. <br>
+                Obs.: Se fizer extremidade no buck usa 0,5 no calculo do mAs.
+                Estruturas superiores a 10cm usa-se: <br>
+                <strong>mAs = (2 x E + CA) x C.M.M</strong>.
+                Estruturas inferiores a 10cm usa-se:
+                <strong>mAs = (2 x E + CF) x C.M.M</strong>. <br>
+                Onde: <strong>CA</strong> = constante do aparelho. (Para descobrir a constante do aparelho basta
+                diminuir todo o <strong>KV</strong> na mesa de comando. O <strong>KV</strong> mínimo é a constante do
+                aparelho.) <strong>CF</strong> = constante do filme. (Para filmes de base verde a constante é 20 e para
+                base azul a constante é 30.) <br>
+            </p>
+
+        </div> <!-- Divisão de Informações -->
+
+    </div> <!-- fim da div meioDaPagina -->
+
+    <footer>
+        <p>Desenvolvido por: <a href="https://www.linkedin.com/in/kennedy-djalma-492400283/" target="_blank">Kennedy
+                Djalma.</a></p>
+
+        <p>Baseado no livro: "Técnicas Básicas de Bolso" de Leal.R | Ramos, E.S. | Chernicharo, J.</p>
+    </footer>
+    <script src="calcMas.js"></script>
+</body>
+
+</html>

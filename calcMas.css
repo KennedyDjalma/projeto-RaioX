@@ -1,0 +1,115 @@
+body {
+    background-image: url("imagem-cranio.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+header {
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+    border: 2px solid white;
+    margin: 5%;
+}
+
+nav :hover{
+    background-color: #1ab7dea0;
+    transition: 0.3s ease-in-out;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+.folhaDaPagina {
+    background-color: #ffffff7c;
+    padding: 5px;
+    max-width: 60%;
+    border-radius: 10px;
+    border: 2px solid rgb(238, 238, 238);
+    margin-top: 10px;
+}
+
+table,
+tr,
+td {
+    margin: auto;
+    border: 1px solid #000000;
+    text-align: center;
+    padding: 4px;
+}
+
+table {
+    background-color: #1ab7de36;
+}
+
+div,
+p,
+strong {
+    margin: auto;
+}
+
+.camposDeInput {
+    text-align: center;
+}
+
+input {
+    width: 30%;
+    background-color: #ffffff7c;
+    border: 1px solid rgba(0, 0, 0, 0.344);
+    border-radius: 4px;
+    padding: 10px;
+    margin: 5px 0;
+    text-align: center;
+}
+
+button {
+    background-color: #1ab7dea0;
+    color: black;
+    border: 1px solid rgba(0, 0, 0, 0.344);
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c6c5c5;
+    color: black;
+    transition: 0.3s ease-in-out;
+}
+
+footer {
+    position: relative;
+}
+
+footer p {
+    background-color: #0a0000;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    padding: 2px;
+}
+
+footer a {
+    background-color: inherit;
+    color: white;
+    text-decoration: none;
+    font: inherit;
+}

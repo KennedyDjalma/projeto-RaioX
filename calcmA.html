@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Raio X</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Projeto Raio X</h1>
+
+    <header> 
+        <nav>
+            <a href="index.html">(kV)</a> - 
+            <a href="calcMas.html">(mAs)</a> - 
+            <a href="calcmA.html">(s)</a> - 
+        </nav>
+    </header>
+
+    <div class="folhaDaPagina">
+
+        <h2>Calculadora de Quilovolts (kV)</h2>
+
+        <div> <!--Digite a CA -->
+            <input type="number" id="inputCA" placeholder="Constante do Aparelho"> Digite CA.
+        </div> <!--Digite a CA -->
+
+        <div> <!--Espessura do corpo: -->
+            <input type="number" id="inputNumber" placeholder="Espessura em cm"> Espessura do corpo.
+        </div> <!--Espessura do corpo: -->
+
+        <button id="calculateButton">Calcular</button>
+
+        <div> <!--Resultado do Kv:-->
+            <input type="number" id="inputKv" placeholder="Resultado do Kv" readonly> Resultado do Kv.
+        </div> <!--Resultado do Kv:-->
+
+        <div class="informacao"> <!-- Divisão de Informações -->
+
+            <h3>Informações:</h3>
+            <p>
+                Quilovolts (kV): É representado pelo símbolo kV e determina a energia (Qualidade, força, poder de
+                penetração)
+                do feixe de radiação.
+            </p>
+        </div> <!-- Divisão de Informações -->
+
+    </div> <!-- fim da div meioDaPagina -->
+
+
+    <footer>
+        <div class="div1footer">
+            <p>Desenvolvido por: <a href="https://www.linkedin.com/in/kennedy-djalma-492400283/" target="_blank">Kennedy
+                    Djalma.</a></p>
+
+            <p>Baseado no livro: "Técnicas Básicas de Bolso" de Leal.R | Ramos, E.S. | Chernicharo, J.</p>
+        </div> <!-- fim da div1footer -->
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

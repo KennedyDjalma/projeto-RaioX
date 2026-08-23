@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Parâmetros</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Parâmetros RadiológicosX</h1>
+
+    <header>
+        <nav>
+            <a href="index.html"><strong>kV</strong></a> 
+            <a href="calcMas.html"><strong>mAs</strong></a>
+        </nav>
+    </header>
+
+    <div class="folhaDaPagina">
+
+        <h2>Calculadora de Quilovolts (kV)</h2>
+
+        <div class="camposDeInput">
+            <div> <!--Digite a CA -->
+                <p>Digite CA:</p>
+                <input type="number" id="inputCA" placeholder="Constante do Aparelho">
+            </div> <!--Digite a CA -->
+
+            <div> <!--Espessura do corpo: -->
+                <p>Espessura do corpo:</p>
+                <input type="number" id="inputNumber" placeholder="Espessura em cm">
+            </div> <!--Espessura do corpo: -->
+
+            <div><button id="calculateButton">Calcular</button></div>
+
+            <div> <!--Resultado do Kv:-->
+                <p>Resultado do Kv:</p>
+                <input type="number" id="inputKv" placeholder="Resultado do Kv" readonly>
+            </div> <!--Resultado do Kv:-->
+        </div>
+
+        <div class="informacao"> <!-- Divisão de Informações -->
+
+            <h3>Informações:</h3>
+            <p>
+                Quilovolts (kV): É representado pelo símbolo kV e determina a energia (Qualidade, força, poder de
+                penetração)
+                do feixe de radiação.
+            </p>
+
+            <p>
+                A fórmula do kv é: <strong> Kv = 2 x e + CA </strong>
+            </p>
+
+            <p>
+                Onde: <br>
+                e = Espessura da parte a ser radiografada. <br>
+                CA = Constante do Aparelho.
+            </p>
+        </div> <!-- Divisão de Informações -->
+
+    </div> <!-- fim da div meioDaPagina -->
+
+
+    <footer>
+        <p>Desenvolvido por: <a href="https://www.linkedin.com/in/kennedy-djalma-492400283/" target="_blank">Kennedy Djalma.</a></p>
+
+        <p>Baseado no livro: "Técnicas Básicas de Bolso" de Leal.R | Ramos, E.S. | Chernicharo, J.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
