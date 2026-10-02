@@ -7,6 +7,11 @@ A aplicação funciona de forma simples: o usuário insere os dados necessários
 O site está publicado via **GitHub Pages** e pode ser acessado pelo link:  
 [https://kennedydjalma.github.io/projeto-RaioX](https://kennedydjalma.github.io/projeto-RaioX)
 
+## Linkedin
+Também fiz o post no Linkedin, pode acessar pelo link:
+
+https://www.linkedin.com/feed/update/urn:li:activity:7497041196201058304/
+
 ## Tecnologias utilizadas
 - HTML
 - CSS
